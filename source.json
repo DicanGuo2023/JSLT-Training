@@ -1,0 +1,100 @@
+{
+    "registeredOfficeAddresses": [
+        {
+            "name": "RegisteredOfficeAddress",
+            "attributes": {
+                "StartDate": 20221214
+            },
+            "addresses": {
+                "name": "PhysicalAddress",
+                "attributes": {
+                    "Line1": "Line1",
+                    "Line2": "Line2",
+                    "City": "Suburb",
+                    "RegionCode": "VIC",
+                    "PostCode": "1234",
+                    "CountryCode": "AU"
+                },
+                "id": "6b3569be670bbb11"
+            },
+            "id": "437fb25be10e0d24"
+        },
+        {
+            "name": "RegisteredOfficeAddress",
+            "attributes": {
+                "StartDate": 20001010
+            },
+            "addresses": {
+                "name": "PhysicalAddress",
+                "attributes": {
+                    "Line1": "Line1",
+                    "Line2": "Line2",
+                    "City": "Suburb",
+                    "RegionCode": "NSW",
+                    "PostCode": "4321",
+                    "CountryCode": "AU"
+                },
+                "id": "000009be670bbb11"
+            },
+            "id": "0000025be10e0d24"
+        } 
+    ],
+    "ppobAddresses": [
+        {
+            "name": "PlaceOfBusiness",
+            "attributes": {
+                "StartDate": 20221214
+            },
+            "addresses": {
+                "name": "PhysicalAddress",
+                "attributes": {
+                    "Line1": "Test Address Line 1",
+                    "Line2": "Test Address Line 2",
+                    "City": "Brisbane City",
+                    "RegionCode": "QLD",
+                    "PostCode": "4005",
+                    "CountryCode": "AU"
+                },
+                "id": "303cf7ab8b9afe96"
+            },
+            "id": "c3a3b7831292ea84"
+        },
+        {
+            "name": "PlaceOfBusiness",
+            "attributes": {
+                "StartDate": 20001214
+            },
+            "addresses": {
+                "name": "PhysicalAddress",
+                "attributes": {
+                    "Line1": "Test Address Line 1",
+                    "Line2": "Test Address Line 2",
+                    "City": "City B",
+                    "RegionCode": "VIC",
+                    "PostCode": "4005",
+                    "CountryCode": "AU"
+                },
+                "id": "111117ab8b9afe96"
+            },
+            "id": "111117831292ea84"
+        }
+    ],
+    "email": {
+        "name": "EmailAddress",
+        "attributes": {
+            "Email": "LIMITEDBYSHARESPROPOSEACOMPANYNAMEHAPPYPATH@TEST.COM",
+            "VerifiedStatus": "override",
+            "StartDate": 20221214
+        },
+        "id": "ad9eb1c112d2fc4c"
+    },
+    "mobile": {
+        "name": "MobileAddress",
+        "attributes": {
+            "Number": "1234567890",
+            "CountryCallingCode": "61",
+            "StartDate": 20221214
+        },
+        "id": "09e17847ac1ad0d2"
+    }
+}
