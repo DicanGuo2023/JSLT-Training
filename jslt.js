@@ -18,7 +18,8 @@ let hardCodedValues = {
 }
 def convert(array)
   if($array)
-    let type = $array.name    let extraInfo = get-key($hardCodedValues, $type)
+    let type = $array.name    
+    let extraInfo = get-key($hardCodedValues, $type)
     {
       "id": $array.id,
       "type": $array.name,
@@ -31,14 +32,17 @@ def convert(array)
         "addressCountryCode": $array.addresses.attributes.CountryCode,
         "addressLine1": $array.addresses.attributes.Line1,
         "addressLine2": $array.addresses.attributes.Line2,
-        // email& mobile attributes        "internetEmailAddress": $array.attributes.Email,
+        // email& mobile attributes        
+        "internetEmailAddress": $array.attributes.Email,
         "phoneNumber": $array.attributes.Number,
         "countryCallingCode": $array.attributes.CountryCallingCode,
         "startDate": $array.attributes.StartDate      },
       "oidDigest": $extraInfo.oidDigest,
     }
-// looping through all itemslet targetAddress = [for(.)
-  // if it is an array of addresses  if(is-array(.value)) 
+// looping through all items
+let targetAddress = [for(.)
+  // if it is an array of addresses  
+  if(is-array(.value)) 
     [for(.value) convert(.)]
   else convert(.value)
 ]
